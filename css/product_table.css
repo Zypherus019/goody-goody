@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rohza+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #29264E;
+
+}
+
+/*-----CSS For Modal-----*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-header {
+    padding: 1px 16px;
+    background-color: transparent;
+    color: white;
+    box-sizing: border-box;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: transparent;
+    color: white;
+    display: flex;
+}
+
+.modal-content {
+    position: fixed;
+    top: 20%;
+    left: 32%;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border-radius: 10px;
+    width: 31%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: animatetop;
+    animation-duration: 0.5s;
+}
+
+.modal-body input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.modal-header button {
+    margin-top: 3px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #ff0015;
+    color: white;
+    transition: background-color 0.3s ease;
+    margin-left: 425px;
+    height: 30px;
+    width: 30px;
+    border: black;
+    border-width: 2px;
+}
+
+.modal-footer button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+    margin-left: 100px;
+}
+
+.modal-footer button:hover {
+    background-color: #0056b3;
+}
+
+
+/*-----Table-----*/
+#dataTable{
+    margin-left: 24%;
+    border-radius: 10px;
+    
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    background-color: gray;
+    border-radius: 10px;
+
+}
+th{
+    padding: 8px;
+    border: #29264E;
+}
+
+td {
+    padding: 8px;
+    text-align: center;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: transparent;
+}
+
+.prod-name{
+    color: #ffffffb8;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.delete-btn{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: rgba(43, 230, 18, 0.859);
+}
+
+.update-btn{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: aqua;
+    font-weight: 600;
+}
+
+/*------Right SideBar------*/
+.btn-container {
+    
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    background-color: #1A1741;
+    border-radius: 20px;
+    position: fixed;
+    right: 0;
+    top: 29%;
+}
+
+
+.tool_header {
+    color: white;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.open {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #2398c2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-archive{
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #2398c2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.archive-btn{
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #2398c2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.archive:hover {
+    background-color: #342f73; 
+}
+
+/*------pagination------*/
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+.pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: gray;
+    border: none;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+/*------Filter------*/
+.filter {
+    margin: 10px 0;
+    margin-left: 53%;
+    margin-top: 3%;
+    border-radius: 15px;
+}
+.filter select {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #3b3952c9;
+    color: rgba(213, 213, 213, 0.827);
+}

@@ -1,0 +1,26 @@
+.h2{
+    left: 19%;
+    top: 20%; 
+    color: white;
+    font-size: 16;
+    position: fixed;
+}
+
+#myChartContainer {
+    width: 65%; 
+    height: 60%; 
+    max-width: 65%;
+    margin: 0 auto;
+    background-color: rgba(154, 144, 144, 0.895);
+    background-size: cover;
+    border-radius: 10px;
+    position: fixed;
+    left: 18%;
+    top: 25%;
+    align-items: center;
+    justify-content: center;
+}
+
+#myChart{
+    margin-left: 7.5%;
+}

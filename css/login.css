@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+    background-image: url(../images/backgroundlogin.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%; /* Adjusted for mobile responsiveness */
+    max-width: 400px; /* Limit width for larger screens */
+    height: 100%; /* Adjusted to fit the whole page */
+    max-height: 800px; /* Limit height for smaller screens */
+    background-color: rgba(79, 77, 77, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-left: auto; /* Align to the right */
+    margin-right: 0; /* Ensure no margin on the right side */
+}
+
+.logo {
+    position: absolute; /* Position logo absolutely */
+    top: 80px; /* Adjust top position */
+    left: 40px; /* Adjust left position */
+}
+
+.logo img{
+    margin: 20px auto; /* Center the logo horizontally and add spacing */
+    width: 440px;
+    max-width: 100%; /* Make sure the logo doesn't exceed container width */
+    height: 220px;
+    max-height: 100%;
+}
+
+.content{
+    text-align: center;
+    margin-top: 20px; /* Adjusted for mobile responsiveness */
+}
+
+h2 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    color: rgba(255, 255, 255, 0.851);
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.label2{
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, 0.51);
+    font-weight: 80;
+    padding-left: 1px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%; /* Adjusted for mobile responsiveness */
+    padding: 10px;
+    border: 2px solid rgba(58, 58, 58, 0.5);
+    border-radius: 7px;
+    background-color:  transparent;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="text"]:focus,
+input[type="password"]:focus {
+    background-color: rgba(124, 124, 124, 0.237);
+    border-color: #25a1ff;
+    opacity: 0.4;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+button{
+    width: 100%; /* Adjusted for mobile responsiveness */
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+    border-radius: 8px;
+}
+
+/* Media queries for adjusting styles based on screen size */
+@media only screen and (min-width: 768px) {
+    /* For tablets and larger screens */
+    .container {
+        width: 70%; /* Adjust width for larger screens */
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /* For desktops */
+    .container {
+        width: 60%; /* Adjust width for larger screens */
+    }
+}
